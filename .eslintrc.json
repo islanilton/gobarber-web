@@ -51,6 +51,7 @@
         }
       ],
       "prettier/prettier": "error",
+      "no-unused-expressions" : "off",
       "no-use-before-define": "off"
     },
     "settings": {
