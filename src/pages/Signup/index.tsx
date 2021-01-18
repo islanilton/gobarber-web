@@ -37,23 +37,25 @@ const SignUp: React.FC = () => {
     <SignUnStyle.Container>
       <SignUnStyle.Background />
       <SignUnStyle.Content>
-        <img src={logoImg} alt="GoBarber" />
-        <Form ref={formRef} onSubmit={handleSubmit}>
-          <h1>Faça seu cadastro</h1>
-          <Input name="name" icon={FiUser} placeholder="Nome" />
-          <Input name="email" icon={FiMail} placeholder="E-mail" />
-          <Input
-            name="password"
-            type="password"
-            icon={FiLock}
-            placeholder="Senha"
-          />
-          <Button type="submit">Cadastrar</Button>
-        </Form>
-        <Link to="/">
-          <FiArrowLeft />
-          Voltar para o logon
-        </Link>
+        <SignUnStyle.AnimationContainer>
+          <img src={logoImg} alt="GoBarber" />
+          <Form ref={formRef} onSubmit={handleSubmit}>
+            <h1>Faça seu cadastro</h1>
+            <Input name="name" icon={FiUser} placeholder="Nome" />
+            <Input name="email" icon={FiMail} placeholder="E-mail" />
+            <Input
+              name="password"
+              type="password"
+              icon={FiLock}
+              placeholder="Senha"
+            />
+            <Button type="submit">Cadastrar</Button>
+          </Form>
+          <Link to="/">
+            <FiArrowLeft />
+            Voltar para o logon
+          </Link>
+        </SignUnStyle.AnimationContainer>
       </SignUnStyle.Content>
     </SignUnStyle.Container>
   );
